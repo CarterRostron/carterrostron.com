@@ -23,37 +23,39 @@ export interface Project {
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    title: 'Project One',
-    description: 'A full-stack application demonstrating modern web development practices with React and Node.js',
-    image: '/images/projects/project1.jpg',
-    tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-    github: 'https://github.com/CarterRostron/project-one',
-    demo: 'https://project-one-demo.com',
+    title: 'Mosquito Population Research',
+    description: 'Machine learning research applying MapNN neural networks and SLiM evolutionary simulations to predict malaria vector mosquito populations in Africa. Collaborated across Haverford College, University of Pennsylvania, and University of Colorado Boulder.',
+    image: '/images/projects/mosquito-research.jpg',
+    tech: ['Python', 'Bash', 'Machine Learning', 'SLiM', 'NumPy'],
   },
   {
     id: 2,
-    title: 'Data Analysis Project',
-    description: 'Comprehensive data analysis using Python, uncovering insights from large datasets',
-    image: '/images/projects/project2.jpg',
-    tech: ['Python', 'Pandas', 'NumPy', 'Matplotlib'],
-    github: 'https://github.com/CarterRostron/data-analysis',
+    title: 'Two-Player Mancala Game',
+    description: 'Interactive Python implementation of the ancient board game supporting two human players with complete game logic including moving, scoring, and special capturing rules.',
+    image: '/images/projects/mancala.jpg',
+    tech: ['Python', 'Game Development', 'Object-Oriented Programming'],
   },
   {
     id: 3,
-    title: 'Machine Learning Model',
-    description: 'Predictive model built with scikit-learn to solve real-world classification problems',
-    image: '/images/projects/project3.jpg',
-    tech: ['Python', 'scikit-learn', 'TensorFlow', 'Jupyter'],
-    github: 'https://github.com/CarterRostron/ml-model',
+    title: 'Two-Player Stratego Game',
+    description: 'Java implementation of the classic strategy board game as an object-oriented programming exercise, featuring board setup and competitive turn-based gameplay mechanics.',
+    image: '/images/projects/stratego.jpg',
+    tech: ['Java', 'OOP', 'Game Logic'],
   },
-  // Add more projects as needed
+  {
+    id: 4,
+    title: 'C/C++ Hashmap and BigInt',
+    description: 'Custom implementations of BigInt class for storing exponentially large integers and Hashmap data structure with all standard methods using only C-style notation and methods.',
+    image: '/images/projects/hashmap-bigint.jpg',
+    tech: ['C/C++', 'Data Structures', 'Algorithm Design'],
+  },
 ]
 
 export const SKILLS = {
-  languages: ['Python', 'JavaScript', 'TypeScript', 'Java', 'SQL', 'C++'],
-  frameworks: ['React', 'Next.js', 'Node.js', 'Express', 'Tailwind CSS', 'Django'],
-  data: ['Pandas', 'NumPy', 'SQL', 'Data Visualization', 'Jupyter', 'Data Analysis'],
-  tools: ['Git', 'GitHub', 'VS Code', 'Docker', 'AWS', 'Figma'],
+  languages: ['Python', 'C/C++', 'Java'],
+  libraries: ['NumPy', 'Pandas', 'Matplotlib', 'SLiM'],
+  tools: ['Git', 'Linux', 'Bash', 'VS Code'],
+  areas: ['Machine Learning', 'Computational Biology', 'Data Analysis', 'Algorithm Design'],
 }
 
 export const NAV_LINKS = [

@@ -29,8 +29,8 @@ export default function Skills() {
 
   const categories = [
     { title: 'Programming Languages', skills: SKILLS.languages, color: 'sage' },
-    { title: 'Frameworks & Libraries', skills: SKILLS.frameworks, color: 'gold' },
-    { title: 'Data Skills', skills: SKILLS.data, color: 'earth' },
+    { title: 'Libraries & Frameworks', skills: SKILLS.libraries, color: 'gold' },
+    { title: 'Research Areas', skills: SKILLS.areas, color: 'earth' },
     { title: 'Tools & Technologies', skills: SKILLS.tools, color: 'sage' },
   ]
 

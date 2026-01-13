@@ -4,6 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import Card from '@/components/ui/Card'
+import Button from '@/components/ui/Button'
 import GeometricShape from '@/components/ui/GeometricShape'
 
 export default function About() {
@@ -70,28 +71,58 @@ export default function About() {
               </h3>
               <div className="space-y-4 text-earth-700 leading-relaxed">
                 <p>
-                  I&apos;m a Computer Science student with a deep passion for creating
-                  elegant software solutions and uncovering meaningful insights
-                  from data.
+                  I&apos;m a Computer Science student at Haverford College (Class of 2027)
+                  with a 3.96 major GPA, passionate about computational biology, machine
+                  learning, and software development.
                 </p>
                 <p>
-                  My journey in technology has led me to explore various aspects
-                  of software development, from building full-stack web
-                  applications to diving deep into data analysis and machine
-                  learning.
+                  Currently, I&apos;m an undergraduate researcher in Prof. Sara Mathieson&apos;s
+                  computational biology lab, where I develop Python and Bash software for
+                  machine learning research on mosquito populations in Africa, applying
+                  MapNN neural networks and SLiM evolutionary simulations.
                 </p>
                 <p>
-                  I believe in writing clean, maintainable code and continuously
-                  learning new technologies to stay at the forefront of the
-                  ever-evolving tech landscape.
+                  My technical interests span from low-level systems programming in C/C++
+                  to high-level data analysis with Python. I&apos;ve built everything from
+                  custom data structures to interactive games, always focusing on clean
+                  code and elegant solutions.
                 </p>
                 <p>
-                  When I&apos;m not coding, you can find me exploring new programming
-                  paradigms, contributing to open-source projects, or analyzing
-                  datasets to solve real-world problems.
+                  Beyond coding, I&apos;m active in Havercode (our CS club), play ultimate
+                  frisbee with Big Donkey Ultimate, and perform improv comedy with the
+                  Lighted Fools, balancing technical work with creative pursuits.
                 </p>
               </div>
             </Card>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="mt-8 flex justify-center md:justify-start"
+            >
+              <a
+                href="/resume/carter-rostron-resume.pdf"
+                download="Carter_Rostron_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" className="flex items-center gap-2">
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  Download Resume
+                </Button>
+              </a>
+            </motion.div>
           </motion.div>
         </div>
       </div>
