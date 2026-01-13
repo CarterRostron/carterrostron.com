@@ -5,8 +5,8 @@ export const SITE_CONFIG = {
   url: 'https://carterrostron.com',
   social: {
     github: 'https://github.com/CarterRostron',
-    linkedin: 'https://linkedin.com/in/yourprofile', // Update with your LinkedIn profile
-    email: 'carter@carterrostron.com', // Update with your email
+    linkedin: 'https://www.linkedin.com/in/carter-rostron/',
+    email: 'carterbrostron@gmail.com',
   },
 }
 
